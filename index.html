@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>İyi ki varsın Özlem</title>
+<style>
+:root{--pink:#ff9bd5;--pink2:#e66db8;--ink:#100b1b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;color:#fff;font-family:Georgia,'Times New Roman',serif;background:radial-gradient(ellipse at 50% 15%,#49234f 0%,#21152f 38%,#0b0913 100%);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 12% 30%,#f79bd533 0 1px,transparent 2px),radial-gradient(circle at 76% 18%,#fff8 0 1px,transparent 2px),radial-gradient(circle at 88% 70%,#f79bd566 0 1px,transparent 2px),radial-gradient(circle at 28% 82%,#fff7 0 1px,transparent 2px);background-size:230px 190px,280px 230px,310px 270px,190px 210px;opacity:.7}
+.glow{position:fixed;width:420px;height:420px;border-radius:50%;filter:blur(100px);opacity:.18;pointer-events:none}.g1{background:#d74caa;top:15%;left:-180px}.g2{background:#7653e8;right:-200px;bottom:0}
+main{position:relative;z-index:1;width:min(1500px,96vw);margin:auto;padding:8vh 0 70px;text-align:center}.eyebrow{letter-spacing:.32em;text-transform:uppercase;font:11px Arial,sans-serif;color:#e9b4d8;opacity:.85}.title{margin:20px 0 12px;font-size:clamp(48px,9vw,92px);font-weight:400;font-style:italic;line-height:1.05;color:#ffd5ed;text-shadow:0 0 12px #ff9bd5,0 0 38px #d84aaf88}.subtitle{color:#e6c6dc;font-size:17px;letter-spacing:.06em;margin:0 0 34px}.cta{border:1px solid #ffb5e2;border-radius:999px;padding:15px 38px;background:linear-gradient(120deg,#7c3c83aa,#301c48cc);color:#fff;font:16px Georgia,serif;letter-spacing:.04em;cursor:pointer;box-shadow:0 0 14px #ed80c9aa,inset 0 0 14px #ed80c933;transition:.25s}.cta:hover{transform:translateY(-2px);box-shadow:0 0 26px #ed80c9}.cta:focus-visible{outline:2px solid white;outline-offset:4px}
+.reveal-layout{display:none;grid-template-columns:minmax(190px,.78fr) minmax(360px,1.55fr) minmax(190px,.78fr);gap:clamp(14px,2vw,28px);align-items:stretch;margin:44px auto 0;max-width:1380px;animation:rise .8s ease both}.reveal-layout.show{display:grid}.side-photo{position:relative;min-height:570px;overflow:hidden;border:1px solid #f4a6d888;border-radius:22px;background:#160e20;box-shadow:0 0 30px #d65cac33}.side-photo img{width:100%;height:100%;min-height:570px;display:block;object-fit:cover;object-position:center}.left-photo img{object-position:48% center}.right-photo img{object-position:center;object-fit:cover}.side-photo:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,transparent 60%,rgba(13,7,20,.38))}.message{display:block;text-align:left;margin:0;padding:clamp(22px,3vw,40px);border:1px solid #f4a6d8aa;border-radius:22px;background:linear-gradient(135deg,rgba(24,14,35,.9),rgba(35,18,43,.78));box-shadow:0 0 35px #d65cac33,inset 0 0 35px #e78ac411;backdrop-filter:blur(12px);align-self:center}.message p{font-size:clamp(16px,1.35vw,20px);line-height:1.75;color:#f7eaf3;margin:0 0 15px}.message strong{color:#ffb8df;font-weight:700}.signature{text-align:right!important;color:#ffb8df!important;font-style:italic;margin:22px 0 0!important}.music{margin:22px auto 0;max-width:420px;display:none}.music.show{display:block}.music-label{font:11px Arial,sans-serif;letter-spacing:.16em;color:#d9b6d2;margin-bottom:8px}.music iframe{width:100%;height:80px;border:0;border-radius:12px}.corner{position:fixed;right:22px;bottom:17px;color:#eab4d8aa;font:italic 14px Georgia,serif;letter-spacing:.06em;z-index:2}.corner b{color:#ffd0eb;font-weight:400}@keyframes rise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:850px){main{width:min(680px,94vw);padding-top:7vh}.reveal-layout{grid-template-columns:1fr 1fr}.message{grid-column:1/-1;grid-row:1}.side-photo{min-height:340px}.side-photo img{min-height:340px}.left-photo{grid-column:1}.right-photo{grid-column:2}}
+@media(max-width:520px){.reveal-layout{grid-template-columns:1fr;gap:16px}.message{grid-column:1;grid-row:1}.left-photo,.right-photo{grid-column:1;min-height:320px}.side-photo img{min-height:320px}.corner{right:14px;bottom:12px}}
+</style>
+</head>
+<body><div class="glow g1"></div><div class="glow g2"></div>
+<main>
+  <div class="eyebrow">Sana özel küçük bir not</div>
+  <h1 class="title">İyi ki varsın<br>Özlem</h1>
+  <p class="subtitle">Unutma, sandığından çok daha güçlüsün.</p>
+  <button class="cta" id="reveal">Buraya tıkla ♡</button>
+  <section class="reveal-layout" id="revealLayout" aria-live="polite">
+    <div class="side-photo left-photo"><img src="taekwondo-left.jpg" alt="Taekwondo yapan sporcu"></div>
+    <article class="message" id="message">
+      <p>Hayatımda tanıdığım en güçlü ve en özgüvenli kızsın.</p>
+      <p>Taekwondo ve diğer spor dallarında çok iyi ve başarılı olacağına inanıyorum. Sana güvenim tam.</p>
+      <p>Seneye inşallah hiçbir şeyin kalmayacak ve çıkıp <strong>“BEN ÖZLEM YETER BAYAZIT'IM!”</strong> diyeceksin. Herkese flexini atacaksın!</p>
+      <p>Aynı şekilde derslerinde de bütün konularda başarılı ve çok iyi olacaksın.</p>
+      <p>Güçlü olduğun kadar güzelsin de.</p>
+      <p class="signature">Destekçiniz ♡</p>
+    </article>
+    <div class="side-photo right-photo"><img src="ozlem-photo.jpg" alt="Özlem'in gönderdiği fotoğraf"></div>
+  </section>
+  <div class="music" id="music"><div class="music-label">ŞAM — FAST LIFE</div><iframe id="spotify" title="Şam - Fast Life" src="about:blank" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
+</main>
+<div class="corner">by <b>ucube</b></div>
+<script>
+const button=document.getElementById('reveal');
+button.addEventListener('click',()=>{
+  document.getElementById('revealLayout').classList.add('show');
+  document.getElementById('music').classList.add('show');
+  const frame=document.getElementById('spotify');
+  if(frame.src==='about:blank') frame.src='https://open.spotify.com/embed/track/1IjKYebduCkSXqLGr7gDyc?utm_source=generator&autoplay=1&t=8';
+  button.textContent='İyi ki varsın Özlem ♡';
+  button.disabled=true;
+  button.style.opacity='.75';
+  document.getElementById('revealLayout').scrollIntoView({behavior:'smooth',block:'start'});
+});
+</script>
+</body></html>
